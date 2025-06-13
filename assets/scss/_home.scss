@@ -60,15 +60,15 @@
         }
     }
 
-    .boxes {margin-top: 5rem;
+    .boxes {margin-top: 4.9rem;
         display: flex;
         flex-wrap: wrap;
         gap: 30px;
 
         .box {
-            padding: 20px 25px;
-            // margin-top: 5.5rem;
-            // padding: 1rem 1rem;
+            
+            margin-top: 5.5rem;
+            padding: 2.8rem 1rem;
             flex: 1;
             background-color: rgb(41, 40, 40);
             position: relative;
@@ -116,7 +116,7 @@
 
             p {
                 color: white;
-                font-size: 12px;
+                font-size: 15px;
             }
 
             hr {
@@ -133,3 +133,79 @@
         }
     }
 }
+.sectionTwo{
+    padding: 8.5rem 0;
+    .boxText{
+        position: relative;
+        hr{
+            width: 3%;
+            border: none;
+            background-color: red;
+            height: 2px;
+            border-radius: 5px;
+            margin-bottom: 2.5rem;
+        }
+        h2{
+            font-size: 55px;
+            font-weight: bold;
+
+        }
+        h4{
+            font-size: 17px;
+            font-weight: 650;
+            color: red;
+            margin-top: 25px;
+        }
+    }
+    .boxes{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 4rem;
+        .box{
+            position: relative;
+            width: 32%;
+            background-color: #f3f3f3;
+            padding: 40px 30px;
+            margin-bottom: 2rem;
+            font-size: 20px;
+            font-weight: 750;
+            z-index: 20;
+            &:hover{
+                &::before{
+                    width: 100%;
+                }
+                
+                transition: 0.2s ease-in-out;
+                color: white;
+                i{
+                    color: white;
+                    transform: translateX(5px);
+                }
+            }
+            &::before{
+                content: '';
+                position: absolute;
+                width: 0px;
+                height: 100%;
+                top: 0;
+                left: 0;
+                background-color: crimson;
+                z-index: -1;
+                transition:0.2s ease-out;
+                
+            }
+            i{
+                position: absolute;
+                right: 20px;
+                font-size: 25px;
+                color: gray;
+                &:hover{
+                    transform: translateX(15px);
+                }
+            }
+
+        }
+    }
+
+    }
